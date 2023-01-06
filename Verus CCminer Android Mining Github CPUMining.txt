@@ -1,0 +1,81 @@
+
+
+
+Câu lệnh setup Userland Ubuntu đào Verus trên Android: 
+
+Pool đào: Luckpool.net
+
+Tool đào: ccminer 
+
+1, Cài đặt Userland trên Playstore
+
+2, Chạy Userland chọn Ubuntu 
+
+ sudo su 
+
+ apt-get update -y 
+
+ apt-get upgrade -y
+
+ apt-get install git 
+
+3, Tải tool đào CCminer về: 
+
+  apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential git nano
+
+  git clone --single-branch -b ARM https://github.com/monkins1010/ccminer.git
+
+  ! cd ccminer
+
+  ! chmod +x build.sh
+
+  ! chmod +x configure.sh
+
+  ! chmod +x autogen.sh
+
+  ./build.sh
+
+4, Chạy dòng lệnh tool đào add ví verus, số cpu đào:
+
+./ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u -t 6 
+
+ Ghi chú:  - u (địa chỉ ví) , .name (tên worker), -t (số cpu đào) 
+
+
+5, cài đặt wakey để màn hình luôn sáng khi đào coin. 
+
+Xin cám ơn các bạn. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
