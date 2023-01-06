@@ -1,0 +1,179 @@
+Phone Mining 
+
+phonevietnam.exe 
+
+https://drive.google.com/file/d/1E630E_zwQi_OFvdvsu9ymzTmCHNQq8FR/view?fbclid=IwAR3RVWLuK7yCDMo40Ymd-PCzXoQ_4-4zRv4fRakDwpbp-uPp8LYYLpR-YdE
+
+
+
+https://drive.google.com/file/d/1E630E_zwQi_OFvdvsu9ymzTmCHNQq8FR/view?fbclid=IwAR3RVWLuK7yCDMo40Ymd-PCzXoQ_4-4zRv4fRakDwpbp-uPp8LYYLpR-YdE
+
+
+
+
+
+
+Ví Verus  RV7dDc2AUMTNwitXo9rJkvsztCwT5HAmTZ
+
+
+
+
+
+
+Câu lệnh setup Userland Ubuntu đào Verus trên Android: 
+
+Pool đào: Luckpool.net
+
+Tool đào: ccminer 
+
+1, Cài đặt Userland trên Playstore
+
+2, Chạy Userland chọn Ubuntu 
+
+ sudo su 
+
+ apt-get update -y 
+
+ apt-get upgrade -y
+
+ apt-get install git 
+
+3, Tải tool đào CCminer về: 
+
+  apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential git nano
+
+  git clone --single-branch -b ARM https://github.com/monkins1010/ccminer.git
+
+  ! cd ccminer
+
+  ! chmod +x build.sh
+
+  ! chmod +x configure.sh
+
+  ! chmod +x autogen.sh
+
+  ./build.sh
+
+4, Chạy dòng lệnh tool đào add ví verus, số cpu đào:
+
+./ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u -t 6 
+
+ Ghi chú:  - u (địa chỉ ví) , .name (tên worker), -t (số cpu đào) 
+
+
+5, cài đặt wakey để màn hình luôn sáng khi đào coin. 
+
+Xin cám ơn các bạn. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cài f-droid apk: https://f-droid.org/en/packages/com.termux/
+cài termux 97MB
+
+mở termux:
+	cài openssh
+		pkg install openssh
+		whoami -> lấy thông tin user
+		passwd ux_axxx -> đổi mật khẩu user 
+	
+	cài screen
+		pkg install screen
+
+đặt ip mặc định cho điện thoại
+
+mobaxterm
+	ip + user + pass ở trên  + port 8022
+	=> cập nhật + cài đặt ubuntu-in-termux + ccminer
+		
+		apt update -y
+		apt upgrade -y
+		apt-get 
+		apt-get install wget  -y
+		apt-get install proot -y 
+		apt-get install git 
+
+		* Tải  Ubuntu-in-Termux về: 
+
+		git clone https://github.com/MFDGaming/ubuntu-in-termux.git
+		cd ubuntu-in-termux
+		chmod +x ubuntu.sh
+		./ubuntu.sh -y
+		./startubuntu.sh
+
+		* update ubuntu 
+
+		apt update -y
+		apt upgrade -y
+		apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential git nano
+		git clone --single-branch -b ARM https://github.com/monkins1010/ccminer.git
+		cd ccminer
+		chmod +x build.sh
+		chmod +x configure.sh
+		chmod +x autogen.sh
+		./build.sh
+
+		* chạy dòng lệnh đào 
+
+
+
+
+khi máy khởi động lại
+
+	sshd // bật openssh server
+
+	cd ubuntu-in-termux
+
+	remote ssh = mobaxterm
+
+	cd ubuntu-in-termux
+	./startubuntu.sh
+
+	screen -R
+	cd ccminer
+	lệnh đào
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
